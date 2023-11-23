@@ -10,7 +10,14 @@ function convertToRoman(num) {
     };
 
   //your code here
-
+	let str="";
+	for(let {value ,numberal} of obj){
+		while(num>=value){
+			str+=numberal;
+			num-=value;
+		}
+	}
+return str;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
